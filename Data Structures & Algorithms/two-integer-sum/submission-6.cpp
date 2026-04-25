@@ -5,18 +5,7 @@ public:
         int st = -1, end = -1;
         int n = nums.size();
 
-        // bruteforce TC --> O(N^2), TC --> O(1)
-
-        // for(int i = 0; i<n; i++){
-        //     for(int j = i + 1; j<n; j++){
-        //         if(nums[i] + nums[j] == target){
-        //             st = i;
-        //             end = j;
-        //         }
-        //     }
-        // }
-
-        // Hashing TC --> O(N), TC --> O(N)
+        // Hashing TC --> O(NlogN), TC --> O(N)
 
         map<int, int> mp;
 
